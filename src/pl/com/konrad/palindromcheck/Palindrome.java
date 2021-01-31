@@ -1,5 +1,7 @@
 package pl.com.konrad.palindromcheck;
 
+import java.util.Locale;
+
 public class Palindrome {
     public static boolean isPalindrome(String sentence) {
         String cleanSentence = sentence.replaceAll("\\s+", "").toLowerCase();
@@ -14,4 +16,11 @@ public class Palindrome {
         }
         return true;
     }
+
+    public static boolean isPalindromeViaSB(String sentence) {
+        String cleanSentence = sentence.replaceAll("\\s+", "").toLowerCase();
+        StringBuilder sentenceToCheck = new StringBuilder(cleanSentence);
+        return sentence.equalsIgnoreCase(String.valueOf(sentenceToCheck.reverse()));
+    }
+
 }
