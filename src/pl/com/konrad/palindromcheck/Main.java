@@ -6,10 +6,16 @@ public class Main {
         System.out.println(Palindrome.isPalindrome("Ala"));
         System.out.println(Palindrome.isPalindrome("Konrad"));
         System.out.println(Palindrome.isPalindrome("Kajak"));
+        System.out.println(Palindrome.isPalindrome(""));
+        System.out.println(Palindrome.isPalindrome("k"));
+        System.out.println(Palindrome.isPalindrome(" "));
+
         System.out.println("-----------------------------------------");
         System.out.println(Palindrome.isPalindromeViaSB("Ala"));
         System.out.println(Palindrome.isPalindromeViaSB("Konrad"));
         System.out.println(Palindrome.isPalindromeViaSB("Kajak"));
-
+        System.out.println(Palindrome.isPalindrome(""));
+        System.out.println(Palindrome.isPalindrome("k"));
+        System.out.println(Palindrome.isPalindrome(" "));
     }
 }
