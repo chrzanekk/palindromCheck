@@ -69,6 +69,25 @@ public class PalindromeTest {
     }
 
     @Test
+    public void isSentenceIsPalindromeEvenLengthWithWhitespaceExpectedResultFalse() {
+        String sentence = "Konrad ";
+
+        boolean result = Palindrome.isPalindrome(sentence);
+
+        assertEquals(false, result);
+    }
+
+    @Test
+    public void isSentenceIsPalindromeEvenLengthWithWhitespaceExpectedResultTrue() {
+        String sentence = "Konnok ";
+
+        boolean result = Palindrome.isPalindrome(sentence);
+
+        assertEquals(true, result);
+    }
+
+
+    @Test
     public void isSentenceIsPalindromeViaSBOddLengthExpectedResultTrue() {
         String sentence = "Ala";
 
@@ -125,6 +144,24 @@ public class PalindromeTest {
     @Test
     public void isSentenceIsPalindromeViaSBSingleCharacterInputExpectedResultTrue() {
         String sentence = "k";
+
+        boolean result = Palindrome.isPalindromeViaSB(sentence);
+
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void isSentenceIsPalindromeViaSBEvenLengthWithWhitespaceExpectedResultFalse() {
+        String sentence = "Konrad ";
+
+        boolean result = Palindrome.isPalindromeViaSB(sentence);
+
+        assertEquals(false, result);
+    }
+
+    @Test
+    public void isSentenceIsPalindromeViaSBEvenLengthWithWhitespaceExpectedResultTrue() {
+        String sentence = "Konnok ";
 
         boolean result = Palindrome.isPalindromeViaSB(sentence);
 
