@@ -1,9 +1,8 @@
 package pl.com.konrad.palindromcheck;
 
 public class Palindrome {
-//    sentence.replaceAll sprawdzić w obu metodach (sprawdzic trim)
+
     public static boolean isPalindrome(String sentence) {
-//        String cleanSentence = sentence.replaceAll("\\s+", "").toLowerCase();
         String cleanSentence = sentence.trim().toLowerCase();
         if (sentence.equals("") || sentence.equals(" ")) {
             return false;
@@ -23,7 +22,6 @@ public class Palindrome {
     }
 
     public static boolean isPalindromeViaSB(String sentence) {
-//        String cleanSentence = sentence.replaceAll("\\s+", "").toLowerCase();
         String cleanSentence = sentence.trim().toLowerCase();
         if (sentence.equals("") || sentence.equals(" ")) {
             return false;
